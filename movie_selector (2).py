@@ -69,6 +69,7 @@ class Entertainment():
             else:
             # Any integer inputs other than values 1-5 we print an error message
                 print("Wrong option selection. Please select from the menu...")
+                print("again")
                 
 
 if __name__ == "__main__":
