@@ -2,15 +2,20 @@ import requests
 import json
 import time
 
-url = "https://streamzui-streamzui-v1.p.rapidapi.com/search"
+def amazon_prime():
 
-querystring = {"country":"us","page":"1","type":"Movie"}
+    url = "https://streamzui-streamzui-v1.p.rapidapi.com/search"
 
-headers = {
-'x-rapidapi-key': "54e93237a1msh975f4560b132a79p19bb2ajsn83d84344d274",
-'x-rapidapi-host': "streamzui-streamzui-v1.p.rapidapi.com"
-}
+    querystring = {"country":"us","page":"1","type":"Movie"}
 
-response = requests.request("GET", url, headers=headers, params=querystring)
+    headers = {
+    'x-rapidapi-key': "54e93237a1msh975f4560b132a79p19bb2ajsn83d84344d274",
+    'x-rapidapi-host': "streamzui-streamzui-v1.p.rapidapi.com"
+    }
 
-print(response.text)
+    response = requests.request("GET", url, headers=headers, params=querystring)
+
+    print(response.text)
+    
+if __name__ == "__main__":
+    amazon_prime()

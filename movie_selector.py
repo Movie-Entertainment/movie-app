@@ -1,6 +1,9 @@
 import sys
 import requests
 import json
+import youtube_api
+import hulu_api
+import amazon_prime_api
 
 
 class Entertainment():
@@ -11,31 +14,31 @@ class Entertainment():
     def __init__(self):
         self.platform = None
 
-    #def lookup_all(self):
-    #    result = input("Enter in the Movie Title or TV Show:")
-
-    def lookup_amazon(self):
+    def lookup_all(self):
         result = input("Enter in the Movie Title or TV Show:")
 
-    def lookup_hulu(self):
-        result = input("Enter in the Movie Title or TV Show:")
+    # def lookup_amazon(self):
+    #     result = input("Enter in the Movie Title or TV Show:")
 
-    def lookup_youtube(self):
-        result = input("Enter in the Movie Title or TV Show:")
-        url = "https://youtube-search1.p.rapidapi.com/" + result
+    # def lookup_hulu(self):
+    #     result = input("Enter in the Movie Title or TV Show:")
 
-        headers = {
-        'x-rapidapi-key': "3d2fbbd54bmshbbccc15fd8196c7p11c1aejsn36237f19f62b",
-        'x-rapidapi-host': "youtube-search1.p.rapidapi.com"
-                 }
+    # def lookup_youtube(self):
+    #     result = input("Enter in the Movie Title or TV Show:")
+    #     url = "https://youtube-search1.p.rapidapi.com/" + result
 
-        response = requests.request("GET", url, headers=headers)
-        jsonResponse = response.json()
-        print("******************************************")
-        for key, value in jsonResponse.items():
-            print(jsonResponse["items"][0]["title"])
+    #     headers = {
+    #     'x-rapidapi-key': "3d2fbbd54bmshbbccc15fd8196c7p11c1aejsn36237f19f62b",
+    #     'x-rapidapi-host': "youtube-search1.p.rapidapi.com"
+    #              }
 
-        print("******************************************")
+    #     response = requests.request("GET", url, headers=headers)
+    #     jsonResponse = response.json()
+    #     print("******************************************")
+    #     for key, value in jsonResponse.items():
+    #         print(jsonResponse["items"][0]["title"])
+
+    #     print("******************************************")
 
         
     def print_menu(self):  ## Your menu design here
@@ -81,10 +84,8 @@ class Entertainment():
             else:
             # Any integer inputs other than values 1-5 we print an error message
                 print("Wrong option selection. Enter any key to try again..")
-                
-main():
+            
     
-  
 
 if __name__ == "__main__":
     my_entertainment = Entertainment()
