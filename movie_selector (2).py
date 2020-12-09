@@ -19,7 +19,7 @@ class Entertainment():
     def lookup_all(self, result):
         self.lookup_youtube(result)
         self.lookup_amazon(result)
-        self.lookup_hulu(result)
+        self.lookup_netflix(result)
 
     
     def print_menu(self):  ## Your menu design here
@@ -43,6 +43,7 @@ class Entertainment():
                 
                 self.platform = "Youtube"
                 print(youtube.lookup_youtube(self.result))
+                #print(youtube.lookup_youtube(f'Title: , Ratio: , Image: '))
 
             elif choice==2:
                 print("Netflix has been selected")
@@ -64,12 +65,11 @@ class Entertainment():
                 
         
             elif choice==5:
-                print("Menu 5 has been selected")
+                print("Program Ended!")
                 loop=False # This will make the while loop to end as not value of loop is set to False
             else:
             # Any integer inputs other than values 1-5 we print an error message
                 print("Wrong option selection. Please select from the menu...")
-                print("again")
                 
 
 if __name__ == "__main__":

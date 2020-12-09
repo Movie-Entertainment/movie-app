@@ -26,9 +26,6 @@ def lookup_youtube(search):
         api_image = jsonResponse["items"][0]["thumbDefault"]
     api_ratio = round((api_likes/(api_dislikes + api_likes)) * 100, 2)
     return apiResult, api_ratio, api_image #returns 3 pieces of data (title, ratio of likes and dislikes and image). access the data (0, 1, 2)
-
-
-#def youtube_url:
     
 if __name__ == "__main__":
-    print(lookup_youtube("peppermint")[2])
+    print(lookup_youtube("peppermint")[1])
