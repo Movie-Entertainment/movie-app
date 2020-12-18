@@ -28,4 +28,4 @@ def lookup_youtube(search):
     return apiResult, api_ratio, api_image #returns 3 pieces of data (title, ratio of likes and dislikes and image). access the data (0, 1, 2)
     
 if __name__ == "__main__":
-    print(lookup_youtube("peppermint")[1])
+    print(lookup_youtube("spy kids")[2])

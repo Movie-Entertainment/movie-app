@@ -1,4 +1,6 @@
 import requests
+import json
+import pprint
 
 def Netflix():
     """This method will search the Netflix API for information about the title of the movie (Simrat Kaur).
@@ -18,6 +20,7 @@ def Netflix():
         'x-rapidapi-host': "unogs-unogs-v1.p.rapidapi.com"
         }
     response = requests.request("GET", url, headers=headers, params=querystring) 
+    
       
     print(response.text)
     
