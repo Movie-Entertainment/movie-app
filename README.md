@@ -11,11 +11,12 @@ Open the containing folder, to run the project use the terminal and run: python 
 and then it will display the menu.
 
 Select from the menu of streaming media platforms:
+```
 1. Youtube
 2. ott
 3. imdb
 4. Exit
-
+```
 ****************************************************************
 YOUTUBE API - 
 If the user selects 1, the following message will appear:
