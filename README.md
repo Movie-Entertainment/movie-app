@@ -38,6 +38,12 @@ URL: https://i.ytimg.com/vi/eeBMQpzoEXQ/default.jpg
 ```
 
 Once the results are displayed, the menu will print again.
+```
+1. Youtube
+2. ott
+3. imdb
+4. Exit
+```
 *****************************************************************
 
 
