@@ -16,6 +16,8 @@ Select from the menu of streaming media platforms:
 3. imdb
 4. Exit
 
+
+
 ****************************************************************
 YOUTUBE API - 
 If the user selects 1, the following message will appear:
@@ -34,6 +36,8 @@ URL: https://i.ytimg.com/vi/eeBMQpzoEXQ/default.jpg
 
 Once the results are displayed, the menu will print again.
 *****************************************************************
+
+
 
 
 ***************************************************************************************************************
@@ -57,6 +61,8 @@ Once the results are displayed, the menu will print again.
 ***************************************************************************************************************
 
 
+
+
 **************************************************************
 IMDB API
 If the user selects 3, the following message will appear:
@@ -76,10 +82,14 @@ Once the results are displayed, the menu will print again.
 ***************************************************************
 
 
+
+
 *************************************************************************************************************
 If user selects any number besides the ones in the menu, an error message will be raised and the program will display the following:
 "Wrong option selection. Please select from the menu..."
 **************************************************************************************************************
+
+
 
 
 *****************************************************************************
