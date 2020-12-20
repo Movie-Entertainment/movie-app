@@ -70,6 +70,12 @@ Synopsis: Back to the Titanic documents the first manned dives to Titanic in nea
 Image: ['https://m.media-amazon.com/images/M/MV5BNTI4ZTM2ZjgtYWI4OS00MTViLWIwYmUtMTljZmYxMjA4NWRhXkEyXkFqcGdeQXVyMTk1MDMwNjk@._V1_UY268_CR147,0,182,268_AL__QL50.jpg']
 ```
 Once the results are displayed, the menu will print again.
+```
+1. Youtube
+2. ott
+3. imdb
+4. Exit
+```
 ***************************************************************************************************************
 
 
@@ -94,6 +100,12 @@ Year: 2007
 IMDB_ID: tt0337978
 ```
 Once the results are displayed, the menu will print again.
+```
+1. Youtube
+2. ott
+3. imdb
+4. Exit
+```
 ***************************************************************
 
 
