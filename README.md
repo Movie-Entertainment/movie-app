@@ -8,6 +8,7 @@ A Simple movie app made with python. The app displays a menu of different stream
 QUICK START
 
 Open the containing folder, to run the project use the terminal and run: python movie_selector_current.py
+and then it will display the menu.
 
 Select from the menu of streaming media platforms:
 1. Youtube
@@ -15,7 +16,8 @@ Select from the menu of streaming media platforms:
 3. imdb
 4. Exit
 
-YOUTUBE API
+****************************************************************
+YOUTUBE API - 
 If the user selects 1, the following message will appear:
 "Youtube has been selected"
 
@@ -31,8 +33,10 @@ Like_Ratio: 95.54
 URL: https://i.ytimg.com/vi/eeBMQpzoEXQ/default.jpg
 
 Once the results are displayed, the menu will print again.
+*****************************************************************
 
 
+***************************************************************************************************************
 OTT API
 If the user selects 2, the following message will appear:
 "ott has been selected"
@@ -50,8 +54,10 @@ Synopsis: Back to the Titanic documents the first manned dives to Titanic in nea
 Image: ['https://m.media-amazon.com/images/M/MV5BNTI4ZTM2ZjgtYWI4OS00MTViLWIwYmUtMTljZmYxMjA4NWRhXkEyXkFqcGdeQXVyMTk1MDMwNjk@._V1_UY268_CR147,0,182,268_AL__QL50.jpg']
 
 Once the results are displayed, the menu will print again.
+***************************************************************************************************************
 
 
+**************************************************************
 IMDB API
 If the user selects 3, the following message will appear:
 "imdb has been selected"
@@ -67,13 +73,18 @@ Year: 2007
 IMDB_ID: tt0337978
 
 Once the results are displayed, the menu will print again.
+***************************************************************
 
 
+*************************************************************************************************************
 If user selects any number besides the ones in the menu, an error message will be raised and the program will display the following:
 "Wrong option selection. Please select from the menu..."
+**************************************************************************************************************
 
-Finally, when the user selects number 4, it will end the program.
 
+*****************************************************************************
+Finally, when the user selects number 4 in the menu, it will end the program.
+*****************************************************************************
 
 
 
