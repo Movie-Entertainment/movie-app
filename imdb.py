@@ -3,7 +3,15 @@ import json
 import pprint
 
 def imdb(result):
-
+    """This method will search the imdb api for the metadata
+        of the movie or tv show entered and extract the following:
+            1. Title of the movie
+            2. Year of the movie
+            3. The imdb ID of the movie
+            
+    Returns:
+        The title, year, and imdb id of a movie.
+    """
     url = "https://movies-tvshows-data-imdb.p.rapidapi.com/"
 
     querystring = {"type":"get-movies-by-title","title": result}
@@ -21,8 +29,6 @@ def imdb(result):
     api_imdb_id = jsonResponse["movie_results"][len(jsonResponse["movie_results"])- 1]["imdb_id"]
     
     return api_Title, api_Year, api_imdb_id
-
-    
     #pprint.pprint(jsonResponse)
 
 if __name__ == "__main__":

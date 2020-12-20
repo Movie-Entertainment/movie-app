@@ -4,12 +4,15 @@ import json
 import pprint
 
 def lookup_youtube(search):
-    """Searching youtube api to extract the following:
+    """This method will search the youtube api for the metadata
+        of the movie or tv show entered and extract the following:
             1. Title of the movie
-            2. likes and dislikes for the movie.
-            3. image of the movie
-    """
-       
+            2. The ratio of the likes and dislikes for the movie
+            3. The image of the movie:
+            
+    Returns:
+        The title, ratio of likes and dislikes, and the image of a movie.
+    """  
     apiResult = None
     url = "https://youtube-search1.p.rapidapi.com/" + search
     headers = {

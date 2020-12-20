@@ -3,6 +3,16 @@ import json
 import pprint
 
 def ott(search):
+    """This method will search the ott api for the metadata
+        of the movie or tv show entered and extract the following:
+            1. Title of the movie
+            2. Year of the movie
+            3. Synopsis of the movie
+            4. Image of the movie
+            
+    Returns:
+        The title, year, synopsis, and image of a movie.
+    """
 
     url = "https://ott-details.p.rapidapi.com/search"
 
