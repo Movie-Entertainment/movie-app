@@ -9,6 +9,9 @@ def imdb(result):
             2. Year of the movie
             3. The imdb ID of the movie
             
+    Args:
+        result (str): the result.
+            
     Returns:
         The title, year, and imdb id of a movie.
     """

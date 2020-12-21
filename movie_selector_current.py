@@ -9,10 +9,22 @@ import imdb
 
 class Entertainment():
     """This function gives the user options for choosing a movie platform
-    where they would like to see a certain movie or tv show (Zarlashta Manan).
+    where they will be able to enter a specific movie or tv show and receive
+    different types of information such as the year, description,
+    image and so on depending on what the api provides. 
+    
+    Attributes:
+        platform (str): streaming media services.
+        result (str): the results.
     """
     
     def __init__(self):
+        """Initializes the class variables.
+        
+        Args:
+            platform (str): see class documentation.
+            result (str): see class documentation.
+        """
         self.platform = None
         self.result = None
 
@@ -20,17 +32,29 @@ class Entertainment():
     #     self.lookup_youtube(result)
     #     self.lookup_imdb(result)
     #     self.lookup_netflix(result)
-
-
     
-    def print_menu(self):  ## Your menu design here
+    def print_menu(self):  
+        """This method will print a menu that contains the streaming media 
+           services options. It will also print an option to exit the program. 
+        """
         print("1. Youtube")
         print("2. ott")
         print("3. imdb")
         print("4. Exit")
         
-    
+        
     def start_program(self):
+        """This method will start the program. It will allow user to choose a platform 
+           from the menu and then the user can enter in a movie or tv show. Then it will 
+           use the apis imported from their individual scripts and extract the data for 
+           that movie or tv show. For each platform, it will print different information
+           depending on what the api provided. User also has an option to exit
+           the program.
+           
+        Raises:
+            ValueError: If a user enters in any number other than the value 1-4, an
+            error message will be printed asking the user to try again.
+        """
         loop=True      
   
         while loop:  ## While loop which will keep going until loop = False
@@ -78,7 +102,7 @@ class Entertainment():
                 print("Program Ends!")
                 loop=False # This will make the while loop to end as not value of loop is set to False
             else:
-            # Any integer inputs other than values 1-5 we print an error message
+            # Any integer inputs other than values 1-4 we print an error message
                 print("Wrong option selection. Please select from the menu...")
                 
 

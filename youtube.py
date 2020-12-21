@@ -10,6 +10,9 @@ def lookup_youtube(search):
             2. The ratio of the likes and dislikes for the movie
             3. The image of the movie:
             
+    Args:
+        search (str): searching the api.
+            
     Returns:
         The title, ratio of likes and dislikes, and the image of a movie.
     """  

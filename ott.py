@@ -10,6 +10,9 @@ def ott(search):
             3. Synopsis of the movie
             4. Image of the movie
             
+    Args:
+        search (str): searching the api.
+            
     Returns:
         The title, year, synopsis, and image of a movie.
     """
